@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+
+    <form aria-label="Sign Up Form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name"><br><br>
+
+            <label for="mail">Email : </label>
+            <input type="email" id="mail" name="email" autocomplete="email" required><br><br>
+
+            <label for="phone">Phone No : </label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required><br><br>
+
+            <span>Gender : </span><br>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </div>
+
+            <label for="dob">Date of birth : </label>
+            <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="edu">Higher Education : </label>
+            <select name="edu" id="edu" required>
+                <option value="">--select--</option>
+                <option value="btech">B Tech</option>
+                <option value="mca">MCA</option>
+                <option value="bca">BCA</option>
+                <option value="bcs">BCS</option>
+                <option value="bsc">BSC Computers</option>
+            </select><br><br>
+
+            <label for="collegeName">University Name : </label>
+            <input type="text" id="collegeName" name="collegeName" autocomplete="organization"><br><br>
+
+            <label for="Gradyear">Graduation Year</label>
+            <input type="number" id="Gradyear" name="Gradyear" min="2020" max="2026"><br><br>
+
+            <label for="grade">Percentage : </label>
+            <input type="number" id="grade" name="grade" placeholder="if CGPA convert it into percentage" min="0"
+                max="100"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <p><b>Terms and Conditions</b><br>
+                By submitting this form, you agree to provide accurate and truthful information. The details you share
+                will be used solely for registration and communication purposes.
+            </p>
+            <div class="agree-group">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">I Agree</label>                
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: white;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+header{
+    background-color:rgb(123, 186, 209) ;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid rgb(113, 125, 125);
+}
+#header-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    margin:5px;
+    padding: 2px;
+}
+
+#header-text h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#header-text nav{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    font-size: 18px;
+}
+.hamburger{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.role{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.role h3{
+    font-size: 18px;
+    color:#27588f;
+    margin-bottom: 10px;
+}
+.role p{
+    color: #27588f;
+}
+
+article{
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#about{
+    color: rgb(78, 68, 68);
+}
+#projects h3{
+    color: rgb(78, 68, 68);
+}
+
+#projects ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    color : rgb(78, 68, 68);
+}
+
+#projects li{
+    flex : 1 1 300px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius:20px ;
+    color: rgb(78, 68, 68);
+    box-shadow:  0 4px 10px rgba(0,0,0,0.1);
+}
+
+#contact h3{
+    color: rgb(78, 68, 68);
+}
+
+#contact ul{
+    list-style: none;
+    color: rgb(78, 68, 68);
+}
+
+#contact li{
+    margin-bottom: 10px;
+    color: rgb(78, 68, 68);
+}
+
+#contact a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    color: rgb(34, 48, 49);
+    margin-bottom: 50px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width : 768px)
+{
+    #header-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header-text nav{
+        flex-direction: column;
+        gap:15px;
+        width: 100%;
+    }
+
+    #projects ul{
+        flex-direction: column;
+    }
+}

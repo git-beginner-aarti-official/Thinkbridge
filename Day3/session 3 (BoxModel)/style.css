@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(234, 221, 221);
+    text-align: center;
+    justify-content: center;
+
+}
+.box-model{
+    background-color: aquamarine;  
+    height: 100px;                    
+    width: 200px;                    
+    padding: 30px;                    
+    margin: 40px;                   
+    border: 1px solid black; 
+}
