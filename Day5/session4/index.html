@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions, transforms, responsive images</title>
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <h1>CSS polish: transitions, transforms, responsive images</h1>
+
+    <button class="fancy-btn">Hover me</button>
+    <br><br>
+
+    <img src= "image.jpeg" 
+        srcset= "image-480.jpeg 480w
+                 image-800.jpeg 800w,
+                 image-1200.jpeg 1200w"
+        sizes="(max-width : 600px) 480px,
+                (max-width : 900px) 800px,
+                1200px"
+        alt="Responsive Image"   
+    >
+
+    
+</body>
+</html>

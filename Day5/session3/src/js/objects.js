@@ -104,5 +104,5 @@ for(let key in oldObj)
 {
     newObj3[key] = oldObj[key]
 }
-console.log(u=newObj3)
+console.log(newObj3)
 

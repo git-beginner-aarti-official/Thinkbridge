@@ -1,0 +1,21 @@
+.fancy-btn{
+    padding: 10px 20px;
+    font-size: large;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease , transform 0.3s ease
+}
+
+.fancy-btn:hover, .fancy-btn:focus{
+    background-color: dodgerblue;
+    transform: scale(1.1) rotate(3deg)
+}
+img {
+    max-width: 100%;
+    height: auto;  
+    border: 2px solid #666;
+    border-radius: 8px;
+}
